@@ -1,6 +1,10 @@
 # fastwalk
 
-Fat iterator reductions for Lua tables — one C call per traversal.
+Fat iterator reductions for Lua tables â€” one C call per traversal.
+
+
+
+
 
 Pure-Lua `pairs()` crosses the Lua?C boundary once per element. This library
 walks the table entirely in C, eliminating those crossings.
@@ -19,9 +23,9 @@ On a 1M-element array (Lua 5.5, Windows, gcc -O2):
 
 ## API
 
-- `fw.sum_values(t)` — sum of all numeric values
-- `fw.count(t)` — number of pairs
-- `fw.max_value(t)` — maximum numeric value
-- `fw.min_value(t)` — minimum numeric value
+- `fw.sum_values(t)` â€” sum of all numeric values
+- `fw.count(t)` â€” number of pairs
+- `fw.max_value(t)` â€” maximum numeric value
+- `fw.min_value(t)` â€” minimum numeric value
 
 ## Build (Windows, Lua 5.5 via Scoop)
