@@ -1,5 +1,14 @@
+# Compiled Lua modules (one per OS)
 *.dll
 *.so
+*.dylib
+
+# Object files and static libs
 *.o
 *.a
+
+# Executables
 *.exe
+
+# macOS noise
+.DS_Store
